@@ -1,0 +1,50 @@
+## Hi i am the Developer here to help you out.
+something **smells fishy** in *here* ahh its the ***fish***
+
+
+
+*) Command:
+  help, whoami,ls,cat [file],clear,neofetch.
+
+*) Colors: 
+#change text to Blue
+## change text to Yellow
+### change text to Red
+Remember: they only work if you use at start
+
+*) Hightlighted text
+  $highlighted text$
+You can use $text$ to highlight the text
+
+*) linking 
+# My Portfolio
+  Check out my [LinkedIn](https://www.pinterest.com/pin/5629568277969321/):
+  To create a link add name inside [] and the link inside ()
+  [name](https://hacksmarter.org/) i.e(link)
+
+*) Bold and italic
+  use BOld by **[text]** 
+  use italic by *[text]*
+  BOLD & ITALIC by ***[text]***
+
+*) Primary and secondary color
+  `` secondary color
+  "" primary color
+ Hello, which one looks the best "Secondary" or `Primary`
+
+
+### JAVASCRIPT GUIDANCE:
+
+To tell you the truth its a mess;
+but i am a nice guy so just for you create variables which you can change to change the colors of bullets tags and etc 
+but even if you still have trouble with my defaults go change them from the script after searching
+Color effect : Remember they only support ANSI color if you find more just create the darn variables
+
+this site is vulnerable to path traversal attacks
+use this command to host it locally
+
+### Remove all these fuckeries now your whole site is static
+To make it work you will be need install some dependies and run the server
+npm install express  # Install Express.js
+i believe npm install will do the trick
+node server.js  # Start the server 

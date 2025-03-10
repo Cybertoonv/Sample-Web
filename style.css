@@ -1,0 +1,342 @@
+    @font-face {
+      font-family: 'Nebula-H';
+      src: url('fonts/Nebula-Hollow.otf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Nebula-R';
+      src: url('fonts/Nebula-Regular.otf') format('truetype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+    }
+
+    body {
+      background: radial-gradient(circle,
+          rgba(10, 15, 31, 1) 0%,
+          rgba(2, 4, 8, 1) 100%);
+      color: #fff;
+    }
+
+    /* Desktop layout for larger screens */
+    .main-body {
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 90vw;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Output section styles */
+    #output {
+      width: 50vw;
+    }
+
+    #intro {
+      font-size: 4.2rem;
+      font-family: Nebula-R;
+    }
+
+    #info {
+      color: #ffffffc7;
+      font-size: 1.2rem;
+      font-family: monospace;
+    }
+
+    /* Terminal container and styling */
+    .container {
+    box-shadow: -4px -4px 16px 1px #01092fe6;
+    background: #00000082;
+    border-radius: 1rem;
+    border: 2px solid #edffed96;
+}
+
+    .header {
+      padding: 1.2%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left,
+    .right {
+      font-size: 1.2rem;
+    }
+
+    .left {
+      font-family: 'Nebula-R';
+    }
+
+    /*  terminal padding*/
+    .xterm {
+      padding: 15px;
+    }
+
+    /* Customize the scrollbar for xterm */
+    #terminal-container .xterm-viewport {
+      overflow-y: scroll !important;
+      background: linear-gradient(178deg,
+          rgb(110 110 110 / 20%) 0%,
+          rgb(0 0 0 / 45%) 100%) !important;
+      scrollbar-width: thin;
+      scrollbar-color: #58a6ff #333;
+    }
+
+    /* For WebKit-based browsers */
+    #terminal-container .xterm-viewport::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #terminal-container .xterm-viewport::-webkit-scrollbar-track {
+      background: #333;
+    }
+
+    #terminal-container .xterm-viewport::-webkit-scrollbar-thumb {
+      background: #58a6ff;
+      border-radius: 4px;
+    }
+
+    #terminal-container .xterm-viewport::-webkit-scrollbar-thumb:hover {
+      background: #4a8fe5;
+    }
+
+    /* Medium Devices (Tablets & Small Laptops) */
+    @media (max-width: 1024px) {
+      .main-body {
+        height: 79vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        /* margin: 0 auto; */
+        /* padding: 20px; */
+        gap: 20px;
+        justify-content: center;
+      }
+
+      #output {
+        width: 32vw;
+      }
+
+      .left,
+      .right {
+        font-size: 1rem;
+      }
+
+      #info {
+        font-size: 1rem;
+        font-family: monospace;
+      }
+
+      #intro {
+        font-size: 3.2rem;
+        font-family: Nebula-R;
+      }
+
+      .container {
+        /* height: 77vh; */
+        width: 42vw;
+        background: #00000082;
+        border-radius: 1rem;
+        border: 2px solid #edffed96;
+      }
+
+      /* Styles for tablets and small laptops */
+    }
+
+    /* Small Devices (Large Phones) */
+    /* Mobile styling */
+
+    @media (max-width: 885px) {
+      .main-body {
+        padding: 2rem;
+        gap: 20px;
+      }
+
+      #intro {
+        font-size: 3rem;
+        font-family: Nebula-R;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      .main-body {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* width: 90vw; */
+        margin: 0 auto;
+        padding: 2rem;
+        gap: 20px;
+        justify-content: flex-start;
+      }
+
+      .container {
+        height: 60vh;
+        width: 48vw;
+        background: #00000082;
+        border-radius: 1rem;
+        border: 2px solid #edffed96;
+      }
+
+      #intro {
+        font-size: 2.5rem;
+        font-family: Nebula-R;
+      }
+    }
+
+    @media (max-width: 655px) {
+      .main-body {
+        display: flex;
+        /* align-items: center; */
+        /* width: 100%; */
+        margin: 2rem 0;
+        padding: 0;
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+      }
+
+      /* Ensure the output section takes at least the full viewport height */
+      #output {
+        position: relative;
+        left: -18px;
+        min-height: 93vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: stretch; */
+        /* margin: 0 36rem; */
+        /* text-align: left; */
+        /* box-sizing: border-box; */
+      }
+
+      #output {
+        position: relative;
+        left: -18px;
+        min-height: 93vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: stretch; */
+        /* margin: 0 36rem; */
+        /* text-align: left; */
+        /* box-sizing: border-box; */
+      }
+
+      #info {
+        width: 41vw;
+        font-size: 1rem;
+      }
+
+      #intro {
+        font-size: 3rem;
+      }
+
+      /* Terminal container below the output */
+      .container {
+        padding: 5px;
+        height: 100vh;
+        width: 77vw;
+        flex-direction: column;
+      }
+
+      /* Optionally, you can adjust the terminal height */
+      .terminal {
+        width: 100%;
+        height: 60vh;
+      }
+
+
+    }
+
+
+    /* Styles for tablets & smaller screens */
+    @media (max-width: 600px) {
+      .main-body {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      /* Ensure the output section takes at least the full viewport height */
+      #output {
+        position: relative;
+        left: -18px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        margin: 0 36rem;
+        text-align: left;
+        box-sizing: border-box;
+      }
+
+      /* Terminal container below the output */
+      .container {
+        padding: 5px;
+        height: 85vh;
+        width: 80%;
+        flex-direction: column;
+      }
+
+      /* Optionally, you can adjust the terminal height */
+      .terminal {
+        width: 100%;
+        height: 60vh;
+      }
+
+      #info {
+        font-size: 1rem;
+        font-family: monospace;
+      }
+    }
+
+    @media (max-width: 410px) {
+      #intro {
+        font-size: 2.3rem;
+      }
+
+      #info {
+        width: 50vw;
+        font-size: 0.8rem;
+        font-family: monospace;
+      }
+
+      #output {
+        /* position: relative; */
+        left: -18px;
+        /* min-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: normal; */
+        /* margin: 0 36rem; */
+        /* text-align: left; */
+        /* box-sizing: border-box; */
+      }
+
+      .container {
+        padding: 5px;
+        margin-bottom: 7rem;
+        /* margin: 3rem 0rem; */
+        /* height: 85vh; */
+        width: 75%;
+        flex-direction: column;
+      }
+
+    }

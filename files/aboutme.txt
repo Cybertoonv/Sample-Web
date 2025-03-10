@@ -1,0 +1,5 @@
+## ABOUT ME
+Hi, I'm a *cybersecurity enthusiast* currently working on my **Bachelor's in Cybersecurity** and serving as a ***SOC Analyst at SOCByte***.
+I work with tools like Wazuh, hold a CNSP certification, and love the challenge of *CTF competitions*.
+I'm all about learning new skills to keep digital spaces safe and protecting sensitive data.
+My goal is simple: build secure systems and make the digital world a safer place for everyone.

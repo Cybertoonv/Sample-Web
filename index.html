@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Portfolio</title>
+  <link rel="icon" href="Logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/xterm/css/xterm.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/xterm/lib/xterm.js"></script>
+  <!-- Include the xterm addon-fit -->
+  <script src="https://unpkg.com/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+<script src="https://unpkg.com/xterm-addon-web-links/lib/xterm-addon-web-links.js"></script>
+</head>
+<body>
+  <div class="main-body">
+    <!-- Output Section: visible fully on mobile -->
+    <div id="output">
+      <h1 id="intro">Welcome to</h1>
+      <h1 id="intro">Bilal Bahadur's Portfolio</h1>
+      <h3 id="info">Type 'help' to get started.</h3>
+    </div>
+    <!-- Terminal Section: appears below on mobile -->
+    <div class="container">
+      <div class="header">
+        <div class="left">Portfolio</div>
+        <div class="right">_ □ x</div>
+      </div>
+      <div class="terminal">
+        <div id="terminal-container"></div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</h
