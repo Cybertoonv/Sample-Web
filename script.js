@@ -80,7 +80,7 @@ ${colors.reset}`;
 
 
 function prompt() {
-  term.write("┌──(Bilal_Bahadur㉿kali)-[~]\r\n");
+  term.write("┌──(Kali_Linux㉿kali)-[~]\r\n");
   term.write("└─$ ");
 }
 
@@ -182,11 +182,11 @@ term.onData(async (e) => {
     } else if (args[0] === "clear") {
       term.clear();
     } else if (args[0] === "whoami") {
-      term.write(`${whoami}Bilal Bahadur${colors.reset}\r\n`);
+      term.write(`${whoami}Nobody${colors.reset}\r\n`);
       term.write(`${whoamiinfo}Cybersecurity Student | Soc Analyst | SIEM Engineer${colors.reset}\r\n`);
     } else if (args[0] === "neofetch") {
       term.write(`${neofetch}.-------------------------------.\r\n`);
-      term.write(`|        Bilal Bahadur          |\r\n`);
+      term.write(`|        Add a name             |\r\n`);
       term.write(`|-------------------------------|\r\n`);
       term.write(`| Cybersecurity Student         |\r\n`);
       term.write(`| Senior SOC Analyst            |\r\n`);
@@ -199,7 +199,7 @@ term.onData(async (e) => {
       term.write(`| Terminal: Warp                |\r\n`);
       term.write(`| Languages: python, Java       |\r\n`);
       term.write(`|-------------------------------|\r\n`);
-      term.write(`| Portfolio: bilalbahadur.dev   |\r\n`);
+      term.write(`| Portfolio: Someones.dev   |\r\n`);
       term.write(`'-------------------------------'\r\n${colors.reset}`);
     } else if (args[0] === "help") {
       term.write(`${whoami}Available commands:${colors.reset}\r\n`);
